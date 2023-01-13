@@ -1,44 +1,23 @@
-vowels = 'aeiou'
-letter = 'x'
-if letter in vowels:
-    print("실행한됨")
+import random
 
+a= random.randint(1,10)  # randint 함수 1에서 10까지 아무거나 나옴
 
-
-sum=1+\
-    2+\
-    3+\
-    4
-print(sum)  #백슬래쉬 줄변환
-
-disaster=1      #if구문
-if disaster:
-    print ("yes")
-else:
-    print("no")
-
-x=5
-print(x<=5 and x>5)
-a=[]
-a.append(2)
-print(bool(a))
-
-vowels = 'aeiou'
-letter = 'a                '
-if letter in vowels:  #in 사용
-    print("실행한됨")
-else:
-    print("실행됨")
-
-limits=20 #숫자제한
-tweets = "pass"*6
-diff=limits - len(tweets)
+limits = 20
+diff= limits - 4*a
 if diff >= 0:
-    print(tweets)
+    print("1에서5사이 나옴")
 else:
-    print(f'제한 글자수 {abs(diff)}')
+    print("6에서 10 나옴")
 
+    #과제 1에서 10까지
+    #연습문제 4.8 책 105쪽
 
-
-
-
+secret=random.randint(1,10)
+guess=random.randint(1.10)
+diff= secret-guess
+if diff>0:
+    print('too low')
+elif diff<0:
+    print('too low')
+else:
+    print('just right')
