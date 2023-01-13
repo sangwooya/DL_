@@ -1,3 +1,3 @@
-a= float(input("섭씨 온도는?"))
-b= 9/5*a +32
-print("화씨온도는=",b)
+for countdown in 5, 4, 3, 2, 1:
+    print(countdown)
+    print(3)
